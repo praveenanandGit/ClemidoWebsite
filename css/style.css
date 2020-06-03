@@ -354,7 +354,7 @@ button:focus{
 	left: 0;
 	right: 0;
 	margin: auto;
-	background: url(../images/menu-arrow.png) no-repeat center;
+	background: url(../ClemidoImages/square\ \(28\ x\ 28\).jpg) no-repeat center;
 	border-radius: 10px;
 	transition: ease all 0.3s;
 	transform: translateY(0%) rotate(140deg);
@@ -1405,7 +1405,7 @@ select.form-control:not([size]):not([multiple]){
 	width: 100%;
 	margin: 0 auto;
 }
-.subscribe-inner h2{	
+.subscribe-inner h1{	
 	font-size: 28px;
 	font-weight: 600;
 	color: #ffffff;
