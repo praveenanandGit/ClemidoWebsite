@@ -16,6 +16,15 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
+// Mobile no
+if (empty($_POST["number"])) {
+    $errorMSG .= "Mobile Number is required ";
+} else {
+    $number = $_POST["number"];
+}
+
+
+
 // // MSG Guest
 // if (empty($_POST["guest"])) {
 //     $errorMSG .= "Subject is required ";
@@ -51,9 +60,9 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-// $Body .= "guest: ";
-// $Body .= $guest;
-// $Body .= "\n";
+$Body .= "number: ";
+$Body .= $number;
+$Body .= "\n";
 // $Body .= "event: ";
 // $Body .= $event;
 // $Body .= "\n";
