@@ -16,20 +16,20 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
-// MSG Guest
-if (empty($_POST["guest"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $guest = $_POST["guest"];
-}
+// // MSG Guest
+// if (empty($_POST["guest"])) {
+//     $errorMSG .= "Subject is required ";
+// } else {
+//     $guest = $_POST["guest"];
+// }
 
 
-// MSG Event
-if (empty($_POST["event"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $event = $_POST["event"];
-}
+// // MSG Event
+// if (empty($_POST["event"])) {
+//     $errorMSG .= "Subject is required ";
+// } else {
+//     $event = $_POST["event"];
+// }
 
 
 // MESSAGE
@@ -40,7 +40,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "askclemido@gmail.com";
+$EmailTo = "ask@clemidohealthcare.com";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -51,12 +51,12 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "guest: ";
-$Body .= $guest;
-$Body .= "\n";
-$Body .= "event: ";
-$Body .= $event;
-$Body .= "\n";
+// $Body .= "guest: ";
+// $Body .= $guest;
+// $Body .= "\n";
+// $Body .= "event: ";
+// $Body .= $event;
+// $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
